@@ -19,5 +19,33 @@ namespace OpulenciaDataStructureCpe2025
                 myListbox.Items.Add(item);
             }
         }
+
+        public static void formShow(Form formToShow, Panel formToShowParent)
+        {
+            formToShow.TopLevel = false;
+            formToShow.WindowState = FormWindowState.Maximized;
+            formToShow.FormBorderStyle = FormBorderStyle.None;
+            formToShow.Parent = formToShowParent;
+            formToShow.Visible = true;
+
+            formToShowParent.Controls.Clear();
+            formToShowParent.Controls.Add(formToShow);
+        }
+
+
+        public static void formClose(Form formToClose)
+        {
+            Form openForm = null;
+            for (int index = Application.OpenForms.Count - 1; index >= 0; index--)
+            {
+                openForm = Application.OpenForms[index];
+                if (openForm != formToClose && !(openForm is Main))
+                {
+                    openForm.Close();
+                    openForm.Dispose();
+                    openForm = null;
+                }
+            }
+        }
     }
 }

@@ -80,9 +80,14 @@ namespace OpulenciaDataStructureCpe2025
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Main main = new Main();
-            main.ShowDialog();
+            //this.Hide();
+            //Main main = new Main();
+            //main.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

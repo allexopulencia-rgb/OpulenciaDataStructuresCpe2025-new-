@@ -35,6 +35,7 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.ltbResult = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,11 +105,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Linear search";
             // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(579, 397);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(174, 30);
+            this.btnBack.TabIndex = 15;
+            this.btnBack.Text = "BACK";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // FrmLinearSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ltbResult);
             this.Name = "FrmLinearSearch";
@@ -128,5 +140,6 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.ListBox ltbResult;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnBack;
     }
 }
