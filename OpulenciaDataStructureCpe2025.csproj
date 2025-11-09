@@ -52,6 +52,18 @@
     <Compile Include="Array.Designer.cs">
       <DependentUpon>Array.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBinarySearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBinarySearch.Designer.cs">
+      <DependentUpon>FrmBinarySearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLinearSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLinearSearch.Designer.cs">
+      <DependentUpon>FrmLinearSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMidtermOpulencia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,11 +88,11 @@
     <Compile Include="FrmStack.Designer.cs">
       <DependentUpon>FrmStack.cs</DependentUpon>
     </Compile>
-    <Compile Include="LinkedList.cs">
+    <Compile Include="FrmLinkedList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LinkedList.Designer.cs">
-      <DependentUpon>LinkedList.cs</DependentUpon>
+    <Compile Include="FrmLinkedList.Designer.cs">
+      <DependentUpon>FrmLinkedList.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -94,6 +106,12 @@
     <EmbeddedResource Include="Array.resx">
       <DependentUpon>Array.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBinarySearch.resx">
+      <DependentUpon>FrmBinarySearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLinearSearch.resx">
+      <DependentUpon>FrmLinearSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMidtermOpulencia.resx">
       <DependentUpon>FrmMidtermOpulencia.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,8 +124,8 @@
     <EmbeddedResource Include="FrmStack.resx">
       <DependentUpon>FrmStack.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LinkedList.resx">
-      <DependentUpon>LinkedList.cs</DependentUpon>
+    <EmbeddedResource Include="FrmLinkedList.resx">
+      <DependentUpon>FrmLinkedList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -115,10 +133,10 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="Properties\Settings.settings">
