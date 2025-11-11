@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.btnArray = new System.Windows.Forms.Button();
             this.btnBinarySearch = new System.Windows.Forms.Button();
             this.btnLinearSearch = new System.Windows.Forms.Button();
@@ -36,23 +37,30 @@
             this.btnStack = new System.Windows.Forms.Button();
             this.btnPrelimExam = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnArray
             // 
             this.btnArray.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArray.Location = new System.Drawing.Point(46, 46);
+            this.btnArray.Location = new System.Drawing.Point(110, 60);
             this.btnArray.Margin = new System.Windows.Forms.Padding(4);
             this.btnArray.Name = "btnArray";
             this.btnArray.Size = new System.Drawing.Size(199, 74);
@@ -64,7 +72,7 @@
             // btnBinarySearch
             // 
             this.btnBinarySearch.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBinarySearch.Location = new System.Drawing.Point(24, 548);
+            this.btnBinarySearch.Location = new System.Drawing.Point(88, 562);
             this.btnBinarySearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnBinarySearch.Name = "btnBinarySearch";
             this.btnBinarySearch.Size = new System.Drawing.Size(255, 76);
@@ -76,7 +84,7 @@
             // btnLinearSearch
             // 
             this.btnLinearSearch.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLinearSearch.Location = new System.Drawing.Point(24, 464);
+            this.btnLinearSearch.Location = new System.Drawing.Point(88, 478);
             this.btnLinearSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnLinearSearch.Name = "btnLinearSearch";
             this.btnLinearSearch.Size = new System.Drawing.Size(255, 76);
@@ -88,7 +96,7 @@
             // btnMidtermExam
             // 
             this.btnMidtermExam.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMidtermExam.Location = new System.Drawing.Point(22, 380);
+            this.btnMidtermExam.Location = new System.Drawing.Point(86, 394);
             this.btnMidtermExam.Margin = new System.Windows.Forms.Padding(4);
             this.btnMidtermExam.Name = "btnMidtermExam";
             this.btnMidtermExam.Size = new System.Drawing.Size(255, 76);
@@ -100,7 +108,7 @@
             // btnQueue
             // 
             this.btnQueue.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQueue.Location = new System.Drawing.Point(35, 296);
+            this.btnQueue.Location = new System.Drawing.Point(99, 310);
             this.btnQueue.Margin = new System.Windows.Forms.Padding(4);
             this.btnQueue.Name = "btnQueue";
             this.btnQueue.Size = new System.Drawing.Size(222, 76);
@@ -112,7 +120,7 @@
             // btnStack
             // 
             this.btnStack.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStack.Location = new System.Drawing.Point(35, 212);
+            this.btnStack.Location = new System.Drawing.Point(99, 226);
             this.btnStack.Margin = new System.Windows.Forms.Padding(4);
             this.btnStack.Name = "btnStack";
             this.btnStack.Size = new System.Drawing.Size(222, 76);
@@ -124,7 +132,7 @@
             // btnPrelimExam
             // 
             this.btnPrelimExam.Font = new System.Drawing.Font("Perpetua", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrelimExam.Location = new System.Drawing.Point(35, 128);
+            this.btnPrelimExam.Location = new System.Drawing.Point(99, 142);
             this.btnPrelimExam.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrelimExam.Name = "btnPrelimExam";
             this.btnPrelimExam.Size = new System.Drawing.Size(222, 76);
@@ -142,7 +150,8 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.YellowGreen;
+            this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
@@ -156,11 +165,23 @@
             this.splitContainer1.SplitterDistance = 176;
             this.splitContainer1.TabIndex = 3;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(166, 161);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 110);
+            this.label3.Location = new System.Drawing.Point(158, 108);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(744, 32);
             this.label3.TabIndex = 2;
@@ -171,7 +192,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 66);
+            this.label2.Location = new System.Drawing.Point(156, 62);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(751, 46);
             this.label2.TabIndex = 1;
@@ -182,7 +203,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 19);
+            this.label1.Location = new System.Drawing.Point(157, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1107, 50);
             this.label1.TabIndex = 0;
@@ -199,19 +220,42 @@
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.Azure;
             this.splitContainer2.Panel1.Controls.Add(this.btnBinarySearch);
             this.splitContainer2.Panel1.Controls.Add(this.btnArray);
-            this.splitContainer2.Panel1.Controls.Add(this.btnLinearSearch);
+            this.splitContainer2.Panel1.Controls.Add(this.btnQueue);
             this.splitContainer2.Panel1.Controls.Add(this.btnPrelimExam);
             this.splitContainer2.Panel1.Controls.Add(this.btnMidtermExam);
+            this.splitContainer2.Panel1.Controls.Add(this.btnLinearSearch);
             this.splitContainer2.Panel1.Controls.Add(this.btnStack);
-            this.splitContainer2.Panel1.Controls.Add(this.btnQueue);
+            this.splitContainer2.Panel1.Controls.Add(this.pictureBox2);
             // 
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.splitContainer2.Panel2.Controls.Add(this.pictureBox3);
             this.splitContainer2.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer2_Panel2_Paint);
             this.splitContainer2.Size = new System.Drawing.Size(1902, 788);
             this.splitContainer2.SplitterDistance = 300;
             this.splitContainer2.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-63, -54);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(642, 854);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(-9, -265);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1607, 1409);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // Main
             // 
@@ -231,9 +275,13 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,5 +300,8 @@
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Button btnLinearSearch;
         private System.Windows.Forms.Button btnBinarySearch;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
